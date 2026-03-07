@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "untitled",
+  "version": "${version}",
+  "name": "untitled",
+  "description": "Best utility client of all time thats not super flashy",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/icon/icon.png",
+  "entrypoints": {
+    "client": [
+      "com.liquidify.untitled.UntitledClient"
+    ],
+    "modmenu": [
+      "com.liquidify.untitled.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "untitled.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
